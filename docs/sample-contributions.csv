@@ -1,0 +1,5 @@
+member,month,amount_due,amount_paid,date_paid,status
+Amina,2026-04,3000,3000,2026-04-04,on_time
+Brian,2026-04,3000,3000,2026-04-08,late
+Carol,2026-04,3000,3000,2026-04-05,on_time
+Brian,2026-05,3000,3000,2026-05-03,on_time
