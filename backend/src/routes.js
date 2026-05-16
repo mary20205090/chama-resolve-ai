@@ -18,6 +18,17 @@ const upload = multer({
 export function createRouter() {
   const router = express.Router();
 
+  router.get('/', (req, res) => {
+    res.json({
+      service: 'chama-resolve-api',
+      status: 'ok',
+      endpoints: {
+        health: '/api/health',
+        cases: '/api/cases'
+      }
+    });
+  });
+
   router.get('/health', (req, res) => {
     res.json({
       ok: true,
