@@ -64,3 +64,27 @@ Run analysis after Secret Manager or `GEMINI_API_KEY` is configured:
 ```bash
 curl -X POST http://localhost:8080/api/cases/CASE_ID/analyze
 ```
+
+## Frontend MVP
+
+The frontend app lives in `frontend/` and talks to the backend API.
+
+Run locally:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:5173/
+```
+
+If the backend is running somewhere else, create `frontend/.env.local`:
+
+```bash
+VITE_API_BASE_URL=http://localhost:8080/api
+```
